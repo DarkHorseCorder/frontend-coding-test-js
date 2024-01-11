@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import LayoutMain from '../components/layout/LayoutMain.vue'
 import Error from '../views/Error.vue'
 import Home from '../views/Home.vue'
+import GBook from '../views/GBook.vue'
+import BookInfo from '../views/BookInfo.vue'
 
 const mainRoutes = [
   {
@@ -9,6 +11,18 @@ const mainRoutes = [
     name: 'Home',
     props: true,
     component: Home,
+  },
+  {
+    path: '/gbook',
+    name: 'GBook',
+    props: true,
+    component: GBook,
+  },
+  {
+    path: '/gbook/:bookid',
+    name: 'BookInfo',
+    props: true,
+    component: BookInfo,
   },
 ]
 
